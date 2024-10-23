@@ -1,0 +1,30 @@
+﻿@model MyApp.Models.Item 
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    // var items = new List<string> { "item 1", "item 2", "item 3"};
+    // var isLoggedIn = false;
+}
+@* <ul>
+    @foreach(var item in items) 
+    {
+        <li>@item</li>
+    }
+</ul>
+ *@
+@*  @if (isLoggedIn)
+ {
+     <p>Welcome back!</p>
+ }
+ else
+ {
+     <p>Please log in.</p>
+ } *@
+ <form asp-action="Submit">
+     <div>
+         <input asp-for="Name" />
+     </div>
+
+     <button type="submit">Submit</button>
+ </form>
